@@ -279,6 +279,97 @@
 					<selected>!Skin.HasSetting(Disable.ColorStudio)</selected>
 				</control>
 			</control>
+
+			<control type="grouplist" id="649">
+				<top>133</top>
+				<left>25</left>
+				<right>0</right>
+				<bottom>140</bottom>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<onup>649</onup>
+				<pagecontrol>60</pagecontrol>
+				<ondown>649</ondown>
+				<visible>Container(9000).HasFocus(9)</visible>
+				<control type="radiobutton" id="64900">
+					<label>Reload skin</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_ReloadSkin)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_ReloadSkin)</onclick>
+				</control>
+				<control type="radiobutton" id="64901">
+					<label>Skin settings</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_SkinSettings)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_SkinSettings)</onclick>
+				</control>
+				<control type="radiobutton" id="64902">
+					<label>Toggle debugging</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_ToggleDebug)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_ToggleDebug)</onclick>
+				</control>
+				<control type="radiobutton" id="64903">
+					<label>System information</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_SystemInfo)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_SystemInfo)</onclick>
+				</control>
+				<control type="radiobutton" id="64904">
+					<label>$LOCALIZE[13012]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_Quit)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_Quit)</onclick>
+				</control>
+				<control type="radiobutton" id="64905">
+					<label>$LOCALIZE[13016]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_Shutdown)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_Shutdown)</onclick>
+				</control>
+				<control type="radiobutton" id="64906">
+					<label>$LOCALIZE[20150]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_ShutdownTimer)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_ShutdownTimer)</onclick>
+				</control>
+				<control type="radiobutton" id="64907">
+					<label>$LOCALIZE[13011]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_Suspend)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_Suspend)</onclick>
+				</control>
+				<control type="radiobutton" id="64908">
+					<label>$LOCALIZE[13010]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_Hibernate)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_Hibernate)</onclick>
+				</control>
+				<control type="radiobutton" id="64909">
+					<label>$LOCALIZE[13013]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_Reboot)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_Reboot)</onclick>
+				</control>
+				<control type="radiobutton" id="64910">
+					<label>$LOCALIZE[20126]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_ProfileSwitch)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_ProfileSwitch)</onclick>
+				</control>
+				<control type="radiobutton" id="64911">
+					<label>Master mode</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_MasterMode)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_MasterMode)</onclick>
+				</control>
+				<control type="radiobutton" id="64912">
+					<label>Idle shutdown toggle</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(PowerMenuHide_IdleShutdown)</selected>
+					<onclick>Skin.ToggleSetting(PowerMenuHide_IdleShutdown)</onclick>
+				</control>
+			</control>
 
 			<control type="grouplist" id="647">
 				<top>133</top>
@@ -753,6 +844,10 @@
 					</item>
 					<item id="5">
 						<label>$LOCALIZE[128]</label>
+						<onclick>noop</onclick>
+					</item>
+					<item id="9">
+						<label>Power menu</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
