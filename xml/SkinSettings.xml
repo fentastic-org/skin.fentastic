@@ -296,7 +296,7 @@
 					<label>Set Search Provider</label>
 					<label2>$VAR[CurrentSearchProviderVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>$VAR[CurrentSearchProviderToggleVar]</onclick>
+					<onclick>ActivateWindow(1106)</onclick>
 				</control>
 				<control type="radiobutton" id="64701">
 					<label>Enable search results window</label>

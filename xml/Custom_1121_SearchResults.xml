@@ -224,7 +224,7 @@
 						</include>
 						<include content="IconButton">
 							<param name="control_id" value="802" />
-							<param name="onclick" value="$VAR[CurrentSearchProviderToggleVar]" />
+							<param name="onclick" value="ActivateWindow(1106)" />
 							<param name="icon" value="icons/infodialogs/configure.png" />
 							<param name="label" value="Switch Search Provider" />
 						</include>
