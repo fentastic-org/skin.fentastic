@@ -745,7 +745,7 @@
 				</control>
 			</control>
 
-			<!-- EXTRA INFO -->
+			<!-- EXPERIMENTS -->
 			<control type="grouplist" id="623">
 				<top>133</top>
 				<left>25</left>
@@ -757,21 +757,15 @@
 				<pagecontrol>60</pagecontrol>
 				<ondown>623</ondown>
 				<visible>Container(9000).HasFocus(8)</visible>
-				<control type="button" id="6230">
+				<!-- WIDGET SORT ORDER -->
+				<control type="radiobutton" id="62300">
+					<label>Enable widget sort order</label>
 					<include>DefaultSettingButton</include>
-					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)][/B]</label>
-					<onclick>SetProperty(Changelog,True)</onclick>
-					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)] v$INFO[System.AddonVersion(skin.fentastic)][/B],Home)</onclick>
-					<onclick>ActivateWindow(1119)</onclick>
-				</control>
-				<control type="button" id="6231">
-					<include>DefaultSettingButton</include>
-					<label>[B]Setup Guide[/B]</label>
-					<onclick>SetProperty(SetupGuide,True)</onclick>
-					<onclick>SetProperty(TextViewerHeader,[B]Setup Guide[/B],Home)</onclick>
-					<onclick>ActivateWindow(1118)</onclick>
+					<selected>Skin.HasSetting(Enable.WidgetSortOrder)</selected>
+					<onclick>Skin.ToggleSetting(Enable.WidgetSortOrder)</onclick>
 				</control>
 			</control>
+
 			<control type="image">
 				<description>Dialog Header image</description>
 				<left>25</left>
@@ -871,7 +865,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="8">
-						<label>Extra info</label>
+						<label>Experiments</label>
 						<onclick>noop</onclick>
 					</item>
 				</content>
