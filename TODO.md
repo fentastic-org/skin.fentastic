@@ -4,8 +4,8 @@ Outstanding items left by the previous developer.
 
 ## UI / Cosmetic
 
-- [ ] **Find way to apply diffuse texture to notification avatar**
-  `xml/DialogNotification.xml:28` — The notification dialog's avatar image (control id 400) needs a diffuse texture applied.
+- [x] **Find way to apply diffuse texture to notification avatar**
+  `xml/DialogNotification.xml:28` — Applied `masks/focus.png` diffuse texture to the avatar image control.
 
 - [ ] **Add new MPAA icons and playback info message**
   `xml/VideoOSD.xml:17` — Add new MPAA rating icons and show an info message at the start of playback displaying title, year, MPAA rating, audio codec, and video codec.
@@ -20,5 +20,5 @@ Outstanding items left by the previous developer.
 
 ## Data / Variables
 
-- [ ] **Fix seasons not showing release year**
-  `xml/Variables.xml:963` — The season-level info line is missing the release year variable (e.g. `$VAR[RI_Year]`) that other DB types include.
+- [x] **Fix seasons not showing release year**
+  `xml/Variables.xml:963` — Added `$VAR[RI_Year]` to the season info line, matching movie and tvshow patterns.
