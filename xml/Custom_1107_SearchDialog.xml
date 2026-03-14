@@ -51,18 +51,18 @@
 						<onclick condition="String.IsEqual(Skin.String(current_search_provider),3)">ActivateWindow(Videos,"plugin://plugin.video.pov/?action=people&amp;mode=search_history",return)</onclick>
 						<visible>String.IsEqual(Skin.String(current_search_provider),0) | String.IsEqual(Skin.String(current_search_provider),1) | String.IsEqual(Skin.String(current_search_provider),3)</visible>
 					</item>
-					<!-- <item>
+					<item>
 						<label>Actors/Actresses (Movies)</label>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="String.IsEqual(Skin.String(current_search_provider),2)">ActivateWindow(Videos,"plugin://plugin.video.umbrella/?action=tools_search",return)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(current_search_provider),2)">RunPlugin(plugin://plugin.video.umbrella/?action=moviePerson)</onclick>
 						<visible>String.IsEqual(Skin.String(current_search_provider),2)</visible>
 					</item>
 					<item>
 						<label>Actors/Actresses (TV Shows)</label>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="String.IsEqual(Skin.String(current_search_provider),2)">ActivateWindow(Videos,"plugin://plugin.video.umbrella/?action=tools_search",return)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(current_search_provider),2)">RunPlugin(plugin://plugin.video.umbrella/?action=tvPerson)</onclick>
 						<visible>String.IsEqual(Skin.String(current_search_provider),2)</visible>
-					</item> -->
+					</item>
 					<item>
 						<label>$VAR[KeywordMoviesLabelVar]</label>
 						<onclick>Dialog.Close(all)</onclick>
