@@ -1,7 +1,7 @@
-# FENtastic Skin for Kodi Omega
-
 > [!WARNING]
 > This is a **community fork** of [ivarbrandt's FENtastic skin](https://github.com/ivarbrandt/skin.fentastic). The original project is no longer actively maintained. This fork aims to continue development with community-requested features and improvements.
+
+# FENtastic Skin for Kodi
 
 FENtastic is a modded version of the default Estuary skin, specifically designed for FEN users. It features a modern UI, custom viewtypes, customizable widgets, and a new default color theme.
 
@@ -62,20 +62,20 @@ FENtastic is a modded version of the default Estuary skin, specifically designed
 Go to **Settings > File Manager** and click **Add Source** at the bottom. Add the following source:
 
 ```
-https://ivarbrandt.github.io/repository.ivarbrandt/
+https://fentastic-org.github.io/repository.fentastic-org/
 ```
 
 ![Add Source](resources/images/add_source.jpg)
 
 ### 2. Install the repository
 
-Go to **Settings > Addons > Install from zip file**, select the source you just added, and install `repository.ivarbrandt-1.0.1.zip`.
+Go to **Settings > Addons > Install from zip file**, select the source you just added, and install `repository.fentastic-org-1.0.0.zip`.
 
 ![Install from zip](resources/images/install_from_zip.jpg)
 
 ### 3. Install the skin
 
-Go to **Install from repository > ivarbrandt's Repository > Look and feel > Skin > FENtastic** and install.
+Go to **Install from repository > fentastic-org's Repository > Look and feel > Skin > FENtastic** and install.
 
 ![Addon Info](resources/images/addon_info.jpg)
 
