@@ -1,12 +1,3 @@
-FENtastic Skin for Kodi
-Copyright (C) Ivar Brandt (https://github.com/ivarbrandt)
-Fork maintained by FENtastic-Org (https://github.com/fentastic-org)
-
-Code is licensed under the GNU General Public License v2.0.
-Artwork is licensed separately under CC BY-SA 4.0 — see LICENSE-ARTWORK.
-
--------------------------------------------------------------------------------
-
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
 
@@ -349,3 +340,12 @@ proprietary programs. If your program is a subroutine library, you may
 consider it more useful to permit linking proprietary applications with the
 library. If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.
+
+-------------------------------------------------------------------------------
+
+FENtastic Skin for Kodi
+Copyright (C) Ivar Brandt (https://github.com/ivarbrandt)
+Fork maintained by FENtastic-Org (https://github.com/fentastic-org)
+
+Code is licensed under the GNU General Public License v2.0.
+Artwork is licensed separately under CC BY-SA 4.0 — see LICENSE-ARTWORK.
