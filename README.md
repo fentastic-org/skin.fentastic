@@ -26,8 +26,8 @@ FENtastic is a modded version of the default Estuary skin, specifically designed
 
 ### UI Experience
 
-| | |
-|---|---|
+|                                                        |                                                    |
+| ------------------------------------------------------ | -------------------------------------------------- |
 | ![Viewtypes Widelist](resources/images/viewtypes1.jpg) | ![Viewtypes List](resources/images/viewtypes2.jpg) |
 | ![Viewtypes Widelist](resources/images/viewtypes3.jpg) | ![Viewtypes List](resources/images/viewtypes4.jpg) |
 
@@ -45,8 +45,8 @@ FENtastic is a modded version of the default Estuary skin, specifically designed
 
 ### Search Window
 
-| | |
-|---|---|
+|                                                      |                                                       |
+| ---------------------------------------------------- | ----------------------------------------------------- |
 | ![Search Window](resources/images/search_window.jpg) | ![Search Window](resources/images/search_window1.jpg) |
 
 ### InfoPanel with Ratings
@@ -127,3 +127,12 @@ Click **Set widgets** to configure up to 10 movie and 10 TV show widgets. For ea
 Click any configured widget to rearrange, rename, remake, change display type, or remove it. Main menu items can also be renamed, remade, or removed.
 
 ![Step 5](resources/images/step_5.jpg)
+
+## License
+
+This project is dual-licensed:
+
+- **Code** — [GNU General Public License v2.0](LICENSE)
+- **Artwork** — [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE-ARTWORK)
+
+Originally created by [Ivar Brandt](https://github.com/ivarbrandt). See individual license files for full terms.
