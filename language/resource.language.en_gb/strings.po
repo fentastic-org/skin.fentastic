@@ -929,3 +929,39 @@ msgstr ""
 msgctxt "#31611"
 msgid "System"
 msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Tab label for HDR and video processing info
+msgctxt "#31612"
+msgid "HDR / Processing"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label for HDR type
+msgctxt "#31613"
+msgid "HDR type"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label for color primaries
+msgctxt "#31617"
+msgid "Color primaries"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label for color space
+msgctxt "#31618"
+msgid "Color space"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label for video bit depth
+msgctxt "#31619"
+msgid "Bit depth"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+#. Label for electro-optical transfer function
+msgctxt "#31620"
+msgid "EOTF"
+msgstr ""

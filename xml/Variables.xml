@@ -637,6 +637,25 @@
 		<value condition="Player.Process(videohwdecoder)">HW</value>
 		<value>SW</value>
 	</variable>
+	<variable name="HdrTypeLabel">
+		<value condition="String.IsEqual(VideoPlayer.HdrType,dolbyvision)">Dolby Vision</value>
+		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10plus)">HDR10+</value>
+		<value condition="String.IsEqual(VideoPlayer.HdrType,hdr10)">HDR10</value>
+		<value condition="String.IsEqual(VideoPlayer.HdrType,hlg)">HLG</value>
+		<value condition="!String.IsEmpty(VideoPlayer.HdrType)">$INFO[VideoPlayer.HdrType]</value>
+		<value>SDR</value>
+	</variable>
+	<variable name="VideoBitDepthVar">
+		<value condition="String.Contains(Player.Process(pixformat),p010)">10-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),10le)">10-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),10be)">10-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),p016)">16-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),16le)">16-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),16be)">16-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),12le)">12-bit</value>
+		<value condition="String.Contains(Player.Process(pixformat),12be)">12-bit</value>
+		<value condition="!String.IsEmpty(Player.Process(pixformat))">8-bit</value>
+	</variable>
 	<variable name="AddonNewsVar">
 		<value condition="!String.IsEmpty(ListItem.AddonNews)">$LOCALIZE[31136]</value>
 	</variable>
