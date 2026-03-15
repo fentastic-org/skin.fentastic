@@ -7,6 +7,21 @@ FENtastic is a modded version of the default Estuary skin, specifically designed
 
 ---
 
+## What's New in the Community Fork
+
+Since [morgann1](https://github.com/morgann1) took over maintenance of FENtastic, the following changes have been made:
+
+- **One-click quick actions on widgets** — press the Info key on any widget to access actions like Trakt Manager, trailers, and more
+- **Sideblade management panel** — manage widgets and sections directly from the home screen sidebar
+- **Search provider selection dialog** — switch between search providers (FEN, Umbrella, etc.) with a dedicated picker
+- **Experiments tab** — replaces the old Extra info tab in skin settings for testing new features
+- **Seasons release year fix** — seasons now correctly display their release year
+- **HDR/video processing labels** — added HDR10+, Dolby Vision, HDR10, HLG, bit depth, and tone mapping info to player overlay
+- **Code cleanup** — refactored code structure, cleaned up font licenses, and improved overall maintainability
+- **Rebranded to "FENtastic (Community)"** — to distinguish from the original upstream skin
+
+---
+
 ## Features
 
 - Modern UI experience with adjustments to pre-existing views
