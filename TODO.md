@@ -50,7 +50,7 @@ Breaking changes, deprecations, and required updates for Kodi v22 compatibility.
 ### Deprecated (still work, will be removed later)
 
 - [ ] **Replace `ListItem.Icon` with `ListItem.Art(thumb)`** · `v21-safe`
-  Used in 17 XML files (30+ occurrences) including `DialogAddonInfo.xml`, `FileBrowser.xml`, `LoginScreen.xml`, `Includes_Home.xml`, `GameOSD.xml`, `EventLog.xml`, `DialogPVRInfo.xml`, `DialogPVRGroupManager.xml`, `MyPVRGuide.xml`, and others. `ListItem.Icon` is deprecated in v22. `ListItem.Art(thumb)` works on v21 and earlier.
+  Used in 17 XML files (48 occurrences). `ListItem.Icon` is deprecated in v22. **Not a simple find-and-replace** — `ListItem.Art(thumb)` only works where items have actual thumbnail artwork. System items (file browser, profiles, addon lists, etc.) only have icons, so `ListItem.Art(thumb)` returns empty for them. Even upstream Estuary (v22 master) still uses `ListItem.Icon` and hasn't migrated yet. Needs a context-aware approach: replace only in media views/widgets where thumbs exist, and leave `ListItem.Icon` in system/utility contexts until Kodi provides `ListItem.Art(icon)` or Estuary establishes a migration pattern.
 
 - [ ] **Replace `ListItem.PictureColour` and `ListItem.PictureProcess`** · `v22-only`
   `xml/MyPics.xml:97,189` — Both are deprecated in v22 with no direct replacement. Removing them now would lose functionality on v21.
