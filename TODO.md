@@ -13,9 +13,6 @@ Outstanding items left by the previous developer.
 - [ ] **Add sideblade panel for widget/section management**
       `xml/Home.xml:832` — Add a sideblade panel allowing direct editing of widgets, hiding sections, and other shortcuts from the home screen.
 
-- [x] **Add one-click actions to category labels**
-      `xml/Includes_Home.xml:13` — Added `oninfo` handlers to 12 widget fixedlists that trigger `category_actions` in `script.fentastic.helper`. Shows a dialog with contextual actions (Play Trailer, Extras, Trakt Manager, Browse Recommended/Similar, Options) based on the focused item's properties and search provider. Toggle in Skin Settings > General > "Enable quick actions on widgets (Info key)".
-
 ## Kodi v22 (Piers) Migration
 
 Breaking changes, deprecations, and required updates for Kodi v22 compatibility.
