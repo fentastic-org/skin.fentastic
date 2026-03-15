@@ -270,6 +270,13 @@
 					<selected>!Skin.HasSetting(NoIconSilhouettes)</selected>
 					<onclick>Skin.ToggleSetting(NoIconSilhouettes)</onclick>
 				</control>
+				<!-- QUICK ACTIONS (INFO KEY) -->
+				<control type="radiobutton" id="63709">
+					<label>Enable quick actions on widgets (Info key)</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(Disable.QuickActions)</selected>
+					<onclick>Skin.ToggleSetting(Disable.QuickActions)</onclick>
+				</control>
 				<!-- STUDIO LOGOS -->
 				<control type="radiobutton" id="63708">
 					<label>Disable color studio logos</label>
