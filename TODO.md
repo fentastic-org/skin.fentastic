@@ -8,11 +8,6 @@ Outstanding items left by the previous developer.
       `xml/VideoOSD.xml:17` — Add new MPAA rating icons and show an info message at the start of playback displaying title, year, MPAA rating, audio codec, and video codec.
       **Upstream:** Estuary's VideoOSD.xml has no MPAA or parental rating references. This would be a FENtastic-only enhancement.
 
-## Home Screen
-
-- [ ] **Add sideblade panel for widget/section management**
-      `xml/Home.xml:832` — Add a sideblade panel allowing direct editing of widgets, hiding sections, and other shortcuts from the home screen.
-
 ## Kodi v22 (Piers) Migration
 
 Breaking changes, deprecations, and required updates for Kodi v22 compatibility.
