@@ -43,6 +43,11 @@
 						<onclick>Skin.SetString(current_search_provider,4)</onclick>
 						<onclick>Dialog.Close(1106)</onclick>
 					</item>
+					<item>
+						<label>Dradis</label>
+						<onclick>Skin.SetString(current_search_provider,5)</onclick>
+						<onclick>Dialog.Close(1106)</onclick>
+					</item>
 				</content>
 			</control>
 		</control>

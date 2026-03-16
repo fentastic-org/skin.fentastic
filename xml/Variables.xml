@@ -745,6 +745,7 @@
     <value condition="String.IsEqual(Skin.String(current_search_provider),2)">Umbrella</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),3)">POV</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),4)">Seren</value>
+    <value condition="String.IsEqual(Skin.String(current_search_provider),5)">Dradis</value>
 		<value>FEN</value>
 	</variable>
 
@@ -753,7 +754,8 @@
     <value condition="String.IsEqual(Skin.String(current_search_provider),1)">Skin.SetString(current_search_provider,3)</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),3)">Skin.SetString(current_search_provider,2)</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),2)">Skin.SetString(current_search_provider,4)</value>
-    <value condition="String.IsEqual(Skin.String(current_search_provider),4)">Skin.SetString(current_search_provider,0)</value>
+    <value condition="String.IsEqual(Skin.String(current_search_provider),4)">Skin.SetString(current_search_provider,5)</value>
+    <value condition="String.IsEqual(Skin.String(current_search_provider),5)">Skin.SetString(current_search_provider,0)</value>
 		<value>Skin.SetString(current_search_provider,0)</value>
 	</variable>
 
@@ -762,6 +764,7 @@
     <value condition="String.IsEqual(Skin.String(current_search_provider),1)">ActivateWindow(10025,plugin://plugin.video.fenlight/?&amp;mode=navigator.my_content&amp;name=My%20Lists,return)</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),2)">ActivateWindow(10025,plugin://plugin.video.umbrella/?action=trakt_Navigator,return)</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),3)">ActivateWindow(10025,plugin://plugin.video.pov/?mode=navigator.my_content&amp;name=32454,return)</value>
+    <value condition="String.IsEqual(Skin.String(current_search_provider),5)">ActivateWindow(10025,plugin://plugin.video.dradis/?action=tools_traktToolsNavigator,return)</value>
 		<value>ActivateWindow(10025,plugin://plugin.video.fen/?&amp;mode=navigator.trakt_lists,return)</value>
 	</variable>
 
@@ -782,6 +785,7 @@
     <value condition="String.IsEqual(Skin.String(current_search_provider),2)">plugin://plugin.video.umbrella/?action=movieSearchterm&amp;name=$INFO[Skin.String(SearchInputEncoded)]</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),3)">plugin://plugin.video.pov/?mode=build_movie_list&amp;action=tmdb_movies_search&amp;query=$INFO[Skin.String(SearchInputEncoded)]</value>
 		<value condition="String.IsEqual(Skin.String(current_search_provider),4)">plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=$INFO[Skin.String(SearchInputEncoded)]</value>
+    <value condition="String.IsEqual(Skin.String(current_search_provider),5)">plugin://plugin.video.dradis/?action=movieSearchterm&amp;name=$INFO[Skin.String(SearchInputEncoded)]</value>
     <value>plugin://plugin.video.fen/?mode=build_movie_list&amp;action=tmdb_movies_search&amp;query=$INFO[Skin.String(SearchInputEncoded)]</value>
 	</variable>
 	<variable name="SearchProviderTVShowsVar">
@@ -790,6 +794,7 @@
     <value condition="String.IsEqual(Skin.String(current_search_provider),2)">plugin://plugin.video.umbrella/?action=tvSearchterm&amp;name=$INFO[Skin.String(SearchInputEncoded)]</value>
     <value condition="String.IsEqual(Skin.String(current_search_provider),3)">plugin://plugin.video.pov/?mode=build_tvshow_list&amp;action=tmdb_tv_search&amp;query=$INFO[Skin.String(SearchInputEncoded)]</value>
 		<value condition="String.IsEqual(Skin.String(current_search_provider),4)">plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=$INFO[Skin.String(SearchInputEncoded)]</value>
+    <value condition="String.IsEqual(Skin.String(current_search_provider),5)">plugin://plugin.video.dradis/?action=tvSearchterm&amp;name=$INFO[Skin.String(SearchInputEncoded)]</value>
 		<value>plugin://plugin.video.fen/?mode=build_tvshow_list&amp;action=tmdb_tv_search&amp;query=$INFO[Skin.String(SearchInputEncoded)]</value>
 	</variable>
 	<variable name="SearchProviderCollectionsVar">
