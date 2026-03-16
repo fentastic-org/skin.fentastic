@@ -6,6 +6,7 @@
 	<onunload>ClearProperty(TextViewerContent,Home)</onunload>
 	<onunload>ClearProperty(ChangelogContent,Home)</onunload>
 	<onunload>ClearProperty(Changelog,skinsettings)</onunload>
+	<onload condition="!String.IsEmpty(Window(skinsettings).Property(Changelog))">RunScript(script.fentastic.helper, mode=load_changelog)</onload>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="button" id="64">
