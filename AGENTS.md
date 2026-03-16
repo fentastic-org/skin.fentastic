@@ -1,52 +1,49 @@
-# AGENTS.md — Universal Instructions for All AI Coding Agents
+# AGENTS.md – Instructions for All AI Coding Agents
 
-This file provides persistent context and rules for **any** AI coding agent (Claude Code, Cursor, Gemini CLI, Codex, Windsurf, etc.).  
-Every agent MUST read and obey these guidelines in every session.
+Vendor-neutral context file. Read this first. Applies to Claude Code, Cursor, Gemini CLI, Copilot agents, etc.
 
-## Project Identity
+## Project Overview
 
-- FENtastic is a **community-maintained MOD** of Kodi's default Estuary skin.
-- Pure XML only — **no** build step, no compilation, no JS/TS/Python.
-- Targets **Kodi v21 (Omega)** — addon.xml API: `xbmc.gui` **5.17.0**
-- **Do NOT** assume or introduce v22 (Piers) / 5.18.0 APIs, infolabels, or patterns unless explicitly instructed to switch target version.
+FENtastic is a pure-XML community MOD of Kodi's Estuary skin.  
+Targets **Kodi v21 (Omega)** only — addon.xml: xbmc.gui 5.17.0  
+No build/compilation step. XML + media only.
 
-## Upstream Estuary — Source of Truth
+## Upstream Reference – Always Check First
 
-Before any change touching Kodi APIs, deprecations, controls, infolabels, or TODO items:
+Before API/deprecation/migration changes:
 
-1. ALWAYS fetch and compare the **current upstream Estuary file** from raw URLs:
-   - https://raw.githubusercontent.com/xbmc/xbmc/master/addons/skin.estuary/xml/Home.xml
-   - (replace filename as needed)
-2. Never fetch GitHub tree/list pages — they stall agents.
-3. Upstream `master` tracks **v22 development** → use only for structure, style, and include patterns.
-4. If upstream removed/migrated a v21-compatible pattern → **keep the v21 version** in FENtastic unless human says to target v22.
+- Fetch **raw** upstream Estuary file:  
+  https://raw.githubusercontent.com/xbmc/xbmc/master/addons/skin.estuary/xml/{filename}.xml
+- Never use tree/list pages.
+- Upstream master = v22 dev — reference for structure/style only.
+- Keep v21 patterns unless explicitly switching to v22 target.
 
-## Compatibility & Migration Rules
+## Compatibility Rules
 
-- Full migration list → `TODO.md` (items tagged `v21-safe` or `v22-only`).
-- **Never apply v22-only changes** (e.g. `Weather.Data()`, certain `ListItem.Art()` patterns).
-- No blanket find-and-replace — always verify against upstream Estuary behavior on v21.
-- Never bump `xbmc.gui` version in `addon.xml` without explicit human approval.
+See TODO.md (tagged v21-safe / v22-only).
 
-## Hard Prohibitions
+- Never apply v22-only changes (e.g. Weather.Data(), unsafe ListItem.Art swaps).
+- No blanket replacements — verify upstream v21 behavior.
+- Never bump xbmc.gui past 5.17.0 without approval.
 
-- Do not create build scripts, CI workflows, package.json, tsconfig, etc.
-- Do not modify or add `.po` translation files — only add English `<string>` entries.
-- Do not assume or edit non-skin files (no helper addons, no Python).
+## Prohibitions
 
-## Versioning Rules
+- No build scripts, CI, package.json, tsconfig, etc.
+- No direct .po edits — add English <string> only.
+- Skin-only — no Python/JS addons.
 
-Follow Semantic Versioning (see README / Kodi wiki):
+## Versioning
 
-- Read `last_updated_version.txt` first to know current version.
-- Classify change: MAJOR (breaking), MINOR (features), PATCH (fixes/cleanup).
-- When bumping: propose updates to `addon.xml` @version, `last_updated_version.txt`, `changelog.txt`.
+Follow SemVer (MAJOR breaking, MINOR features, PATCH fixes).
 
-## General Expectations
+- Read last_updated_version.txt first.
+- On bump: update addon.xml version, last_updated_version.txt, changelog.txt.
 
-- Prefer reusing `Includes*.xml`, `Variables.xml` — avoid duplicating infolabel/conditional logic.
-- Widget / skin settings → use numbered pattern (`widget_1_type`, `widget_1_path`, etc.).
-- XML changes → show line numbers, surrounding context, before/after diff.
-- If v21 compatibility is unclear → propose change + upstream diff + ask for confirmation.
+## Workflow Expectations
+
+- Reuse Includes\*.xml / Variables.xml — avoid duplication.
+- Widgets: numbered skin settings (widget_1_type etc.).
+- XML edits: show file, line numbers, context, ```diff before/after.
+- If v21 risk unclear: propose + upstream diff + ask.
 
 Last updated: March 2026

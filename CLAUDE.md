@@ -1,34 +1,34 @@
-# CLAUDE.md — Claude Code Specific Instructions
+# CLAUDE.md – Claude Code Specific Guidance
 
-**Read AGENTS.md first** — these are overrides / additions for Claude Code sessions.
+**Read AGENTS.md first** — this adds Claude preferences.
 
-## Thinking & Workflow Style
+## Thinking Process
 
-- Think step-by-step before writing any code or suggestion.
-- Be conservative: prefer minimal changes → explain why each line is needed.
-- When suggesting XML edits: ALWAYS show:
+- Think step-by-step: plan → upstream check → compatibility → edit proposal → diff.
+- Conservative: minimal changes, explain every addition/removal.
+- When v21 migration: state tag (v21-safe / v22-only) + upstream comparison.
+
+## Output Format
+
+- Use ```xml for code blocks.
+- Edits:
   1. File path
-  2. Line numbers + 5–10 lines of context
-  3. Before → After diff (use ```diff)
-  4. Explanation of v21 compatibility and upstream Estuary comparison
-- If migration-related: explicitly state whether it's `v21-safe` or risk breaking v21.
+  2. Line numbers + context (5–10 lines)
+  3. ```diff before → after
 
-## Output Preferences
+     ```
+  4. Why + v21 safety
+- Propose one focused change → ask: "Apply? Adjustments?"
 
-- Use markdown code blocks with language (```xml)
-- For large files: suggest targeted snippets, not full-file rewrites.
-- Propose one focused change at a time → wait for approval before next step.
-- End suggestions with: "Does this look correct? Any adjustments before applying?"
+## Kodi XML Reminders
 
-## Memory & Learning
+- Case-sensitive, whitespace-sensitive in places — precise indentation.
+- Prefer <include> over inline repeats.
+- Cross-check infobools/conditions in Variables.xml first.
 
-- When you discover new patterns, gotchas, or decisions → suggest adding them to AGENTS.md or TODO.md.
-- If I share a new preference → capture it in this file or AGENTS.md as appropriate.
+## Memory Tips
 
-## Kodi-Specific Reminders for Claude
+- If pattern repeats → suggest adding to AGENTS.md.
+- Use concise language — avoid redundancy.
 
-- Kodi XML is case-sensitive and whitespace-sensitive in places — be precise.
-- Always cross-check infobools / conditions against Variables.xml first.
-- Favor `<include>` over inline repetition.
-
-Keep responses focused and incremental.
+Keep responses incremental and focused.

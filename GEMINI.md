@@ -1,26 +1,27 @@
-# GEMINI.md — Instructions for Gemini CLI / Gemini Code Assist
+# GEMINI.md – Gemini CLI Context
 
-Read AGENTS.md first for core project rules.
+See AGENTS.md for core project rules.
 
-## Commit Message Style (Primary Use)
+## Commit Message Conventions
 
-When generating commit messages:
+Use Conventional Commits strictly:
 
-- Follow Conventional Commits strictly: type(scope): description
-  - Types: feat, fix, refactor, style, docs, chore, perf, test, build, ci, revert
-  - Scope: optional, e.g. (home), (view), (widget), (migration)
-- First line: max 72 chars, imperative mood
-- Body: explain **what** changed + **why** (especially for migration/deprecation)
-- Footer: reference TODO.md item or upstream commit if relevant
-- Example:
-  feat(home): add custom widewall view
-  refactor: replace deprecated ListItem.Icon (v21-safe)
+- Format: type(scope): short description (max 72 chars, imperative)
+- Types: feat | fix | refactor | style | docs | chore | perf | test | build | ci | revert
+- Scope: optional (e.g. home, view, widget, migration)
+- Body: What changed + why (esp. for deprecations/migrations)
+- Footer: Refs (e.g. TODO.md item, upstream PR)
 
-## General Gemini Behavior
+Examples:
 
-- Be concise — prefer short, accurate answers.
-- For XML: output clean, indented code blocks.
-- When unsure about v21 compatibility → flag it clearly and suggest checking upstream raw file.
+- feat(home): add custom widewall view layout
+- fix(widget): correct numbered setting fallback (v21-safe)
+- refactor: align ListItem usage with upstream Estuary (keep v21 compat)
 
-Use bullet points for lists.
-Prioritize speed and clarity.
+## General Preferences
+
+- Concise, bullet-point responses when possible.
+- For XML: clean, indented blocks.
+- Flag v21 risks clearly.
+
+Use for commit generation via Gemini CLI / Git integrations.
