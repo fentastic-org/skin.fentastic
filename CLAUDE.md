@@ -66,5 +66,6 @@ When making changes that warrant a version bump:
     Determine the appropriate bump level based on the changes made
     Update the version attribute in addon.xml
     Update last_updated_version.txt to match
+    Update changelog.txt to match the changes that have been made
 
 The version in addon.xml is what Kodi uses to detect updates. The last_updated_version.txt file exists so you can quickly check the current version without parsing XML.
