@@ -38,7 +38,7 @@ Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.1
 - [ ] **Update language strings 31112 and 31115** · `v21-safe`
       `Custom_1101_SettingsList.xml:61,69` + language files — FENtastic uses "Toggle audio stream" (#31112) and "Toggle subtitle" (#31115). Upstream changed these to "Audio streams" and "Subtitles streams".
 
-- [ ] **Add codec variables for new audio formats** · `v21-safe`
+- [x] **Add codec variables for new audio formats** · `v21-safe`
       Upstream added `AudioCodecVar` and `ObjectAudioTypeVar` to Variables.xml. New codec identifiers: `dtshd_ma_x` (DTS:X), `eac3_ddp_atmos` (Dolby Digital Plus Atmos), `truehd_atmos` (TrueHD Atmos), `dtshd_ma_x_imax` (DTS:X IMAX), and AAC variants. `AudioCodecVar` maps to display names ("DTS-HD MA", "Dolby Digital+", "Dolby TrueHD") while `ObjectAudioTypeVar` maps spatial formats ("DTS:X", "Dolby Atmos"). Additive — v21 ignores unknown values.
 
 - [ ] **Add support for parental rating infolabels** · `v22-only`
