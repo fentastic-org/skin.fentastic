@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol></defaultcontrol>
+	<onload condition="Skin.HasSetting(Enable.PlaybackInfoOverlay)">Skin.TimerStart(playbackinfo_overlay)</onload>
 	<controls>
 		<control type="group" id="0">
 			<control type="label" id="10">
@@ -71,6 +72,93 @@
 				<aligny>center</aligny>
 				<align>center</align>
 				<font>font13</font>
+			</control>
+		</control>
+		<!-- Playback Info Overlay - shows briefly at start of playback -->
+		<control type="group">
+			<visible>Skin.HasSetting(Enable.PlaybackInfoOverlay) + Skin.TimerIsRunning(playbackinfo_overlay)</visible>
+			<visible>!Window.IsActive(videoosd) + !Window.IsActive(seekbar) + !Window.IsActive(playerprocessinfo)</visible>
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
+			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="800">Hidden</animation>
+			<depth>DepthOSD</depth>
+			<!-- Background gradient -->
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>100%</width>
+				<height>220</height>
+				<texture>frame/osdfade.png</texture>
+			</control>
+			<!-- Title and Year -->
+			<control type="label">
+				<left>30</left>
+				<top>25</top>
+				<width>1400</width>
+				<height>50</height>
+				<font>font45_title</font>
+				<shadowcolor>black</shadowcolor>
+				<label>$VAR[PlaybackInfoTitleVar]</label>
+			</control>
+			<!-- Subtitle (episode info or genre) -->
+			<control type="label">
+				<left>30</left>
+				<top>80</top>
+				<width>1400</width>
+				<height>35</height>
+				<font>font13</font>
+				<shadowcolor>black</shadowcolor>
+				<label>$VAR[PlaybackInfoSubVar]</label>
+			</control>
+			<!-- Media flags row: MPAA + codecs -->
+			<control type="grouplist">
+				<left>30</left>
+				<top>125</top>
+				<width>1200</width>
+				<height>60</height>
+				<orientation>horizontal</orientation>
+				<itemgap>5</itemgap>
+				<!-- MPAA Rating badge -->
+				<control type="group">
+					<visible>!String.IsEmpty(VideoPlayer.mpaa)</visible>
+					<width>140</width>
+					<control type="label">
+						<width>140</width>
+						<height>60</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[VideoPlayer.mpaa]</label>
+						<font>font_flag</font>
+					</control>
+					<include content="MediaFlag">
+						<param name="texture" value="flags/flag.png" />
+					</include>
+				</control>
+				<!-- Video Codec -->
+				<include content="MediaFlag">
+					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
+				</include>
+				<!-- Video Resolution -->
+				<include content="MediaFlag">
+					<param name="texture" value="$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]" />
+				</include>
+				<!-- HDR Type -->
+				<include content="MediaFlag">
+					<param name="texture" value="$INFO[VideoPlayer.HdrType,flags/videohdr/,.png]" />
+					<param name="visible" value="!String.IsEmpty(VideoPlayer.HdrType)" />
+				</include>
+				<!-- Aspect Ratio -->
+				<include content="MediaFlag">
+					<param name="texture" value="$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]" />
+				</include>
+				<!-- Audio Codec -->
+				<include content="MediaFlag">
+					<param name="texture" value="$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]" />
+				</include>
+				<!-- Audio Channels -->
+				<include content="MediaFlag">
+					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
+				</include>
 			</control>
 		</control>
 	</controls>

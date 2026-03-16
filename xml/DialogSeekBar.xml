@@ -60,6 +60,22 @@
 					<itemgap>5</itemgap>
 					<visible>[Player.ShowInfo | Window.IsActive(fullscreeninfo)] + !Player.ChannelPreviewActive + Window.IsActive(fullscreenvideo)</visible>
 					<animation effect="fade" start="0" end="100" time="200" delay="1000">Visible</animation>
+					<!-- MPAA Rating badge -->
+					<control type="group">
+						<visible>!String.IsEmpty(VideoPlayer.mpaa)</visible>
+						<width>140</width>
+						<control type="label">
+							<width>140</width>
+							<height>60</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[VideoPlayer.mpaa]</label>
+							<font>font_flag</font>
+						</control>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/flag.png" />
+						</include>
+					</control>
 					<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
 					</include>

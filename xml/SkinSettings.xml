@@ -270,6 +270,13 @@
 					<selected>!Skin.HasSetting(NoIconSilhouettes)</selected>
 					<onclick>Skin.ToggleSetting(NoIconSilhouettes)</onclick>
 				</control>
+				<!-- PLAYBACK INFO OVERLAY -->
+				<control type="radiobutton" id="63708">
+					<label>Show playback info at start of video</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.PlaybackInfoOverlay)</selected>
+					<onclick>Skin.ToggleSetting(Enable.PlaybackInfoOverlay)</onclick>
+				</control>
 				<!-- QUICK ACTIONS (INFO KEY) -->
 				<control type="radiobutton" id="63709">
 					<label>Enable quick actions on widgets (Info key)</label>

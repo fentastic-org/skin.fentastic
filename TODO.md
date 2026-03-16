@@ -1,11 +1,5 @@
 # TODO
 
-## UI / Cosmetic
-
-- [ ] **Add MPAA icons and playback info overlay**
-      Add MPAA rating icons to the skin and show an info message at the start of playback displaying title, year, MPAA rating, audio codec, and video codec.
-      **Upstream:** Estuary has no MPAA or parental rating references in VideoOSD.xml. This would be a FENtastic-only enhancement. Could pair with the new v22 `ParentalRating*` infolabels (see Optional Enhancements below).
-
 ## Kodi v21 (Omega) Leftovers
 
 The original developer migrated the skin from Kodi v20 (Nexus) to v21 (Omega). Most migration was completed — `DialogFavourites.xml` was replaced with `MyFavourites.xml`, `DialogColorPicker.xml` was added, `Player.Cutlist` was migrated to `Player.Editlist`/`Player.Cuts`, and old boolean syntax (`StringCompare`, `SubString`, `IntegerGreaterThan`) was replaced with modern equivalents. Two items remain:
