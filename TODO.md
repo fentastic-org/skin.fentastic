@@ -1,5 +1,10 @@
 # TODO
 
+## Changelog
+
+- [ ] **Wire up `changelog.txt` as the changelog source**
+      Currently the changelog viewer (`Custom_1119_ChangelogViewer.xml`) displays content hardcoded in `Custom_1117_ExtraInfoContent.xml` as a skin XML include — it does not read `changelog.txt`. Kodi can't read files directly in skin XML, so this needs the helper addon to read `changelog.txt` and set a window property. Moving directory for this.
+
 ## UI / Cosmetic
 
 - [ ] **Add MPAA icons and playback info overlay**
