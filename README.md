@@ -75,14 +75,14 @@ FENtastic is a modded version of the default Estuary skin, specifically designed
 Go to **Settings > File Manager** and click **Add Source** at the bottom. Add the following source:
 
 ```
-https://fentastic-org.github.io/repository.fentastic-org/
+https://fentastic-org.github.io/
 ```
 
 ![Add Source](resources/images/add_source.jpg)
 
 ### 2. Install the repository
 
-Go to **Settings > Addons > Install from zip file**, select the source you just added, and install `repository.fentastic-org-1.0.0.zip`.
+Go to **Settings > Addons > Install from zip file**, select the source you just added, and install `repository.fentastic-org-x.x.x.zip`.
 
 ![Install from zip](resources/images/install_from_zip.jpg)
 
