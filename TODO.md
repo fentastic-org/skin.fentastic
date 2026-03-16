@@ -1,10 +1,5 @@
 # TODO
 
-## Changelog
-
-- [ ] **Wire up `changelog.txt` as the changelog source**
-      Currently the changelog viewer (`Custom_1119_ChangelogViewer.xml`) displays content hardcoded in `Custom_1117_ExtraInfoContent.xml` as a skin XML include — it does not read `changelog.txt`. Kodi can't read files directly in skin XML, so this needs the helper addon to read `changelog.txt` and set a window property. Moving directory for this.
-
 ## UI / Cosmetic
 
 - [ ] **Add MPAA icons and playback info overlay**
@@ -35,23 +30,11 @@ Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.1
       `addon.xml:5` — Required to target Kodi v22.
 
 - [ ] **Migrate weather infolabels to `Weather.Data()` interface** · `v22-only`
-      53 occurrences across 5 files. Two kinds of changes:
-      1. **Direct infolabels** (5 occurrences) — replace old-style weather infolabels:
-         - `Weather.Location` → `Weather.Data(Current.Location)` — `Home.xml:574`
-         - `Weather.Conditions` → `Weather.Data(Current.Condition)` — `Home.xml:585`, `MyWeather.xml:127`
-         - `Weather.Temperature` → `Weather.Data(Current.Temperature)` — `Home.xml:596`, `MyWeather.xml:121`
-      2. **`Window(weather).Property(...)` → `Weather.Data(...)`** (48 occurrences):
-         - `Home.xml` — 7
-         - `Includes_Home.xml` — 31
-         - `MyWeather.xml` — 9
-         - `Variables.xml` — 1
+      53 occurrences across 5 files. Two kinds of changes: 1. **Direct infolabels** (5 occurrences) — replace old-style weather infolabels: - `Weather.Location` → `Weather.Data(Current.Location)` — `Home.xml:574` - `Weather.Conditions` → `Weather.Data(Current.Condition)` — `Home.xml:585`, `MyWeather.xml:127` - `Weather.Temperature` → `Weather.Data(Current.Temperature)` — `Home.xml:596`, `MyWeather.xml:121` 2. **`Window(weather).Property(...)` → `Weather.Data(...)`** (48 occurrences): - `Home.xml` — 7 - `Includes_Home.xml` — 31 - `MyWeather.xml` — 9 - `Variables.xml` — 1
       **Upstream:** Estuary has fully migrated. Also uses new keys: `Current.FeelsLike`, `Current.Wind`, `Current.Humidity`, `Current.Precipitation`, `Today.Sunrise`, `Today.Sunset`, `WeatherProvider`, `Daily.IsFetched`, `Hourly.IsFetched`.
 
 - [ ] **Remove manual `System.TemperatureUnits` appending** · `v22-only`
-      4 occurrences across 3 files. Kodi v22 appends temperature units automatically — keeping manual appending causes double units.
-      - `Includes.xml:1022`
-      - `MyWeather.xml:127`
-      - `Includes_Home.xml:2024` (×2, same line)
+      4 occurrences across 3 files. Kodi v22 appends temperature units automatically — keeping manual appending causes double units. - `Includes.xml:1022` - `MyWeather.xml:127` - `Includes_Home.xml:2024` (×2, same line)
       **Upstream:** Estuary has removed all `System.TemperatureUnits` references.
 
 - [ ] **Verify full-screen background coverage** · `v21-safe`

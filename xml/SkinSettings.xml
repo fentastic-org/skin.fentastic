@@ -777,7 +777,7 @@
 					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)][/B]</label>
 					<onclick>SetProperty(Changelog,True)</onclick>
 					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)] v$INFO[System.AddonVersion(skin.fentastic)][/B],Home)</onclick>
-					<onclick>ActivateWindow(1119)</onclick>
+					<onclick>RunScript(script.fentastic.helper, mode=load_changelog)</onclick>
 				</control>
 			</control>
 
