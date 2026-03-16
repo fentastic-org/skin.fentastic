@@ -1,13 +1,5 @@
 # TODO
 
-## Kodi v21 (Omega) Leftovers
-
-The original developer migrated the skin from Kodi v20 (Nexus) to v21 (Omega). Most migration was completed — `DialogFavourites.xml` was replaced with `MyFavourites.xml`, `DialogColorPicker.xml` was added, `Player.Cutlist` was migrated to `Player.Editlist`/`Player.Cuts`, and old boolean syntax (`StringCompare`, `SubString`, `IntegerGreaterThan`) was replaced with modern equivalents. Two items remain:
-
-- [ ] **Add `DialogVideoManager.xml`**
-      Missing required window for Omega's Video Versions & Extras management feature. Window IDs: 12004 (`managevideoversions`), 12017 (`managevideoextras`). Without this file, the video version/extras manager has no skin-defined layout and falls back to Kodi's default.
-      **Upstream:** Estuary has `DialogVideoManager.xml` with list ID 50 and button IDs 21–28 (Play, Add version, Add extras, Rename, Set default, Remove, Choose art, Rename extra).
-
 ## Kodi v22 (Piers) Migration
 
 Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.18.0.
