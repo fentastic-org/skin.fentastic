@@ -14,12 +14,10 @@
 - Edits:
   1. File path
   2. Line numbers + context (5–10 lines)
-  3. ```diff\nbefore → after\n
-
+  3. ```diff
+      before → after
      ```
-
   4. Why + v21 safety
-
 - Propose one focused change → ask: "Apply? Adjustments?"
 
 ## Kodi XML Reminders
