@@ -277,6 +277,13 @@
 					<selected>!Skin.HasSetting(Disable.QuickActions)</selected>
 					<onclick>Skin.ToggleSetting(Disable.QuickActions)</onclick>
 				</control>
+				<!-- WIDGET SORT ORDER -->
+				<control type="radiobutton" id="63710">
+					<label>Enable widget sort order</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Enable.WidgetSortOrder)</selected>
+					<onclick>Skin.ToggleSetting(Enable.WidgetSortOrder)</onclick>
+				</control>
 				<!-- STUDIO LOGOS -->
 				<control type="radiobutton" id="63708">
 					<label>Disable color studio logos</label>
@@ -752,7 +759,7 @@
 				</control>
 			</control>
 
-			<!-- EXPERIMENTS -->
+			<!-- EXTRA INFO -->
 			<control type="grouplist" id="623">
 				<top>133</top>
 				<left>25</left>
@@ -764,12 +771,13 @@
 				<pagecontrol>60</pagecontrol>
 				<ondown>623</ondown>
 				<visible>Container(9000).HasFocus(8)</visible>
-				<!-- WIDGET SORT ORDER -->
-				<control type="radiobutton" id="62300">
-					<label>Enable widget sort order</label>
+				<!-- CHANGELOG -->
+				<control type="button" id="6230">
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(Enable.WidgetSortOrder)</selected>
-					<onclick>Skin.ToggleSetting(Enable.WidgetSortOrder)</onclick>
+					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)][/B]</label>
+					<onclick>SetProperty(Changelog,True)</onclick>
+					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)] v$INFO[System.AddonVersion(skin.fentastic)][/B],Home)</onclick>
+					<onclick>ActivateWindow(1119)</onclick>
 				</control>
 			</control>
 
@@ -872,7 +880,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="8">
-						<label>Experiments</label>
+						<label>Extra info</label>
 						<onclick>noop</onclick>
 					</item>
 				</content>
