@@ -8,9 +8,6 @@ The original developer migrated the skin from Kodi v20 (Nexus) to v21 (Omega). M
       Missing required window for Omega's Video Versions & Extras management feature. Window IDs: 12004 (`managevideoversions`), 12017 (`managevideoextras`). Without this file, the video version/extras manager has no skin-defined layout and falls back to Kodi's default.
       **Upstream:** Estuary has `DialogVideoManager.xml` with list ID 50 and button IDs 21–28 (Play, Add version, Add extras, Rename, Set default, Remove, Choose art, Rename extra).
 
-- [ ] **Remove `System.HasCMS` reference**
-      `Custom_1101_SettingsList.xml:56` — Used as a `<visible>` condition for a settings item. This boolean is not present in upstream Estuary and appears to be a leftover from Nexus. The referenced setting item is likely never shown.
-
 ## Kodi v22 (Piers) Migration
 
 Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.18.0.
