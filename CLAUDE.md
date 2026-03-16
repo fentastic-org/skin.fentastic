@@ -60,6 +60,8 @@ This project follows Semantic Versioning (MAJOR.MINOR.PATCH):
     MINOR — new features, new functionality (new widgets, new menu options, new integrations)
     PATCH — bug fixes, code cleanup, deprecation updates, cosmetic changes
 
+The Kodi documentation is at: https://kodi.wiki/index.php?title=Addon.xml&oldid=128873#How_versioning_works
+
 When making changes that warrant a version bump:
 
     Check last_updated_version.txt to know the current version
