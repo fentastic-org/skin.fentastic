@@ -23,7 +23,9 @@ FENtastic is an Estuary MOD. Before applying any change based on Kodi migration 
 
 **Do NOT fetch the GitHub tree page** (`https://github.com/xbmc/xbmc/tree/master/addons/skin.estuary/xml`) — it will stall the agent. Always use raw file URLs.
 
-Do not apply Kodi changelog or wiki advice as a blanket find-and-replace. Verify against what Estuary actually does. If Estuary hasn't migrated yet, **do not migrate ahead of upstream**.
+**Important:** Upstream Estuary's `master` branch tracks Kodi's development branch and targets future Kodi versions (currently v22 Piers / `xbmc.gui` 5.18.0). FENtastic targets **Kodi v21 (Omega)** for stability. Use upstream as a reference for how Estuary handles things, but do not pull in v22-only patterns or infolabels. If upstream has migrated away from a v21 pattern, keep the v21 version in FENtastic unless explicitly instructed otherwise.
+
+Do not apply Kodi changelog or wiki advice as a blanket find-and-replace. Verify against what Estuary actually does, and only adopt changes that are compatible with Kodi v21.
 
 ## Key Conventions
 
