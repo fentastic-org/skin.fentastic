@@ -1,3 +1,26 @@
+[B][COLOR accent_color]Version 1.3.0[/COLOR][/B]
+- Added one-click actions to category labels (via info button on focused widget items)
+- Added sideblade panel for widget/section management
+
+[B][COLOR accent_color]Version 1.2.0[/COLOR][/B]
+- Replaced Extra info tab with Experiments tab in Skin settings
+  • First experiment: widget sort order toggle
+- Fixed seasons not showing release year
+- Applied diffuse texture to notification avatar
+- Cleaned up font licenses
+
+[B][COLOR accent_color]Version 1.1.0[/COLOR][/B]
+- Renamed addon to "FENtastic (Community)"
+- Added new search provider selection dialog
+  • Choose between FEN, FEN Light, Umbrella, POV, and Seren
+- Fixed Umbrella search condition typo and updated onclick actions for search items
+- Refactored skin settings code structure
+
+[B][COLOR accent_color]Version 1.0.26[/COLOR][/B]
+- Added HDR and video processing labels to player info dialog
+- Updated licensing information
+- Other small changes
+
 [B][COLOR accent_color]Version 1.0.25[/COLOR][/B]
 - Quick fix for landscape artwork
 
