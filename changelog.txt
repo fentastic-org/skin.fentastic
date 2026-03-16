@@ -1,3 +1,9 @@
+[B][COLOR accent_color]Version 1.4.0[/COLOR][/B]
+- Added DialogVideoManager.xml for Video Versions and Extras management
+- Updated fonts to their latest versions
+- Removed System.HasCMS reference (cleanup)
+- Added project development instructions (CLAUDE.md)
+
 [B][COLOR accent_color]Version 1.3.0[/COLOR][/B]
 - Added one-click actions to category labels (via info button on focused widget items)
 - Added sideblade panel for widget/section management
