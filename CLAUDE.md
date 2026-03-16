@@ -51,3 +51,20 @@ The `TODO.md` tracks all migration items with per-item compatibility flags:
 - Do not bump `xbmc.gui` past `5.17.0` without explicit instruction.
 - Do not create build scripts, CI config, or package files — this project has none by design.
 - Do not add or modify `language/` files directly for new strings; add `<string>` entries to the English source and note that translations follow separately.
+
+## Version Bumping
+
+This project follows Semantic Versioning (MAJOR.MINOR.PATCH):
+
+    MAJOR — breaking changes (removed features, incompatible API changes, dropped Kodi version support)
+    MINOR — new features, new functionality (new widgets, new menu options, new integrations)
+    PATCH — bug fixes, code cleanup, deprecation updates, cosmetic changes
+
+When making changes that warrant a version bump:
+
+    Check last_updated_version.txt to know the current version
+    Determine the appropriate bump level based on the changes made
+    Update the version attribute in addon.xml
+    Update last_updated_version.txt to match
+
+The version in addon.xml is what Kodi uses to detect updates. The last_updated_version.txt file exists so you can quickly check the current version without parsing XML.
