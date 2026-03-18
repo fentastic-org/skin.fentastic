@@ -1,5 +1,13 @@
+[B][COLOR accent_color]Version 1.5.0[/COLOR][/B]
+- Added new audio codec and object audio type variables
+- Adjusted various UI element configurations
+
 [B][COLOR accent_color]Version 1.4.0[/COLOR][/B]
 - Added DialogVideoManager.xml for Video Versions and Extras management
+- Added MPAA icons and playback info overlay
+- Added Dradis search provider support
+- Restored changelog button and reorganized skin settings tabs
+- Wired up changelog.txt as the changelog source
 - Updated fonts to their latest versions
 - Removed System.HasCMS reference (cleanup)
 - Added project development instructions (CLAUDE.md)
