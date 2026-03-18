@@ -1,3 +1,6 @@
+[B][COLOR accent_color]Version 1.5.1[/COLOR][/B]
+- Synced changelog with git history
+
 [B][COLOR accent_color]Version 1.5.0[/COLOR][/B]
 - Added new audio codec and object audio type variables
 - Adjusted various UI element configurations
