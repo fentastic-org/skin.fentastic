@@ -29,7 +29,7 @@
 				<bottom>0</bottom>
 				<width>1990</width>
 				<height>470</height>
-				<texture diffuse="masks/keyboard.png" colordiffuse="dialog_bg">colors/white.png</texture>
+				<texture diffuse="masks/keyboard.png" colordiffuse="$VAR[DialogBgColorVar]">colors/white.png</texture>
 			</control>
 			<control type="label" id="311">
 				<centerleft>50%</centerleft>
@@ -55,7 +55,7 @@
 				<top>184</top>
 				<width>1542</width>
 				<height>100</height>
-				<texture diffuse="masks/focus-long.png" colordiffuse="dialog_bg">colors/white.png</texture>
+				<texture diffuse="masks/focus-long.png" colordiffuse="$VAR[DialogBgColorVar]">colors/white.png</texture>
 			</control>
 			<control type="edit" id="312">
 				<centerleft>50%</centerleft>

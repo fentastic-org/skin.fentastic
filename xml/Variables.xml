@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="DialogBgColorVar">
+		<value condition="!String.IsEmpty(Skin.String(WindowThemeColor))">$INFO[Skin.String(WindowThemeColor)]</value>
+		<value>FF1F2020</value>
+	</variable>
+	<variable name="WindowThemeNameVar">
+		<value condition="String.IsEqual(Skin.String(WindowThemeColor),FF434343)">Light</value>
+		<value condition="String.IsEqual(Skin.String(WindowThemeColor),FF373737)">Medium</value>
+		<value>Dark</value>
+	</variable>
 	<variable name="PVRStatusImageVar">
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
 		<value condition="ListItem.HasTimer | ListItem.HasTimerSchedule">windows/pvr/timer.png</value>

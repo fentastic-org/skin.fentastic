@@ -22,7 +22,7 @@
 				<top>0</top>
 				<width>640</width>
 				<height>160</height>
-				<texture colordiffuse="dialog_bg">masks/dialog-notification.png</texture>
+				<texture colordiffuse="$VAR[DialogBgColorVar]">masks/dialog-notification.png</texture>
 				<bordersize>17</bordersize>
 			</control>
 			<control type="image" id="400">

@@ -67,7 +67,7 @@
 						<control type="image">
 							<width>396</width>
 							<height>245</height>
-							<texture colordiffuse="dialog_bg">masks/landscape-unfocused.png</texture>
+							<texture colordiffuse="$VAR[DialogBgColorVar]">masks/landscape-unfocused.png</texture>
 							<!-- <bordertexture border="21" infill="false">overlays/shadow.png</bordertexture> -->
 							<bordersize>20</bordersize>
 						</control>

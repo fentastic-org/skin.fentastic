@@ -291,6 +291,15 @@
 					<selected>Skin.HasSetting(Enable.WidgetSortOrder)</selected>
 					<onclick>Skin.ToggleSetting(Enable.WidgetSortOrder)</onclick>
 				</control>
+				<!-- WINDOW THEME -->
+				<control type="button" id="63711">
+					<label>Choose window theme</label>
+					<label2>$VAR[WindowThemeNameVar]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!String.IsEqual(Skin.String(WindowThemeColor),FF373737) + !String.IsEqual(Skin.String(WindowThemeColor),FF434343)">Skin.SetString(WindowThemeColor,FF373737)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(WindowThemeColor),FF373737)">Skin.SetString(WindowThemeColor,FF434343)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(WindowThemeColor),FF434343)">Skin.SetString(WindowThemeColor,FF1F2020)</onclick>
+				</control>
 				<!-- STUDIO LOGOS -->
 				<control type="radiobutton" id="63708">
 					<label>Disable color studio logos</label>
