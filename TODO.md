@@ -13,14 +13,6 @@ Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.1
 
 These changes are backward-compatible and can be adopted immediately.
 
-#### Labels / Strings
-
-- [ ] **Update codec display labels** · `v21-safe`
-      `Variables.xml` — "Dolby D" → "Dolby Digital", "Dolby D+" → "Dolby Digital+", "TrueHD" → "Dolby TrueHD", "DTSHD-HRA" → "DTS-HD HRA", "DTSHD-MA" → "DTS-HD MA". Also new AAC subtypes (AAC-LC, AAC-SSR, AAC-LTP, HE-AAC, HE-AACv2) and MP2 codec added.
-
-- [ ] **Add EpisodePart to season/episode labels** · `v21-safe`
-      `Variables.xml` — `SeasonEpisodeLabel` now includes `$INFO[ListItem.EpisodePart,/]` for multi-part episodes (e.g., "E1/2"). Gracefully empty on v21. New variables: `EpisodeNameLabel`, `SeasonEpisodeAndNameLabel`, `VideoPlayerSeasonEpisodeAndNameLabel`.
-
 #### Behavior
 
 - [ ] **Update home widget back-button behavior** · `v21-safe`
