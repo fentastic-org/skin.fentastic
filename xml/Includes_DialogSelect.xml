@@ -478,7 +478,7 @@
 						<control type="image">
 							<width>444</width>
 							<height>250</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="4" infill="false" colordiffuse="button_focus">colors/white.png</texture>
 							<visible>Control.HasFocus(10811)</visible>
 						</control>
 					</control>
@@ -584,7 +584,7 @@
 						<control type="image">
 							<width>444</width>
 							<height>250</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="4" infill="false" colordiffuse="button_focus">colors/white.png</texture>
 							<visible>Control.HasFocus(10811)</visible>
 						</control>
 					</control>
@@ -691,7 +691,7 @@
 						<control type="image">
 							<width>444</width>
 							<height>250</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="4" infill="false" colordiffuse="button_focus">colors/white.png</texture>
 						</control>
 					</control>
 				</focusedlayout>
