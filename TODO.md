@@ -52,9 +52,6 @@ These changes are backward-compatible and can be adopted immediately.
 - [ ] **Add `hitrect` to info dialog buttons** · `v21-safe`
       `Includes_Buttons.xml` — `<hitrect x="21" y="21" w="245" h="100" />` added to `InfoDialogButton`, `InfoDialogToggleButton`, and `DialogAddonInfo` radio buttons for improved touch targets.
 
-- [ ] **Verify full-screen background coverage** · `v21-safe`
-      Kodi v22 changed how the screen is cleared at frame start. The skin must explicitly draw over the entire screen or set a background color, otherwise undefined/garbage content may appear in undrawn areas.
-
 ---
 
 ### v22-only — Requires Kodi v22
