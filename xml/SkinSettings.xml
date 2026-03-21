@@ -134,8 +134,8 @@
 				<control type="radiobutton" id="6252">
 					<label>$LOCALIZE[31008]</label>
 					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(home_no_categories_widget)</selected>
-					<onclick>Skin.ToggleSetting(home_no_categories_widget)</onclick>
+					<selected>!Skin.HasSetting(home_no_music_categories_widget)</selected>
+					<onclick>Skin.ToggleSetting(home_no_music_categories_widget)</onclick>
 				</control>
 				<control type="radiobutton" id="6272">
 					<label>$LOCALIZE[2]</label>
@@ -144,6 +144,12 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
 				</control>
 				<!-- MUSIC VIDEOS -->
+				<control type="radiobutton" id="6253">
+					<label>$LOCALIZE[31008]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(home_no_musicvideos_categories_widget)</selected>
+					<onclick>Skin.ToggleSetting(home_no_musicvideos_categories_widget)</onclick>
+				</control>
 				<control type="radiobutton" id="6131">
 					<label>$LOCALIZE[20389]</label>
 					<include>DefaultSettingButton</include>
@@ -151,6 +157,12 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMusicVideoButton)</onclick>
 				</control>
 				<!-- PVR -->
+				<control type="radiobutton" id="6254">
+					<label>$LOCALIZE[31008]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(home_no_pvr_categories_widget)</selected>
+					<onclick>Skin.ToggleSetting(home_no_pvr_categories_widget)</onclick>
+				</control>
 				<control type="radiobutton" id="6262">
 					<label>$LOCALIZE[19020]</label>
 					<include>DefaultSettingButton</include>
@@ -165,6 +177,12 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
 				</control>
 				<!-- addons -->
+				<control type="radiobutton" id="6255">
+					<label>$LOCALIZE[31008]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(home_no_addons_categories_widget)</selected>
+					<onclick>Skin.ToggleSetting(home_no_addons_categories_widget)</onclick>
+				</control>
 				<control type="radiobutton" id="614">
 					<label>$LOCALIZE[24001]</label>
 					<include>DefaultSettingButton</include>
