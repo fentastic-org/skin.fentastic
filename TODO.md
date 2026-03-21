@@ -18,9 +18,6 @@ These changes are backward-compatible and can be adopted immediately.
 - [ ] **Add `dialog_header_tint` color to all color schemes** · `v21-safe`
       Upstream added a new `dialog_header_tint` color to `defaults.xml` and all 13 theme color files. Used by the redesigned `DialogBackgroundCommons` header. FENtastic color schemes need this color added.
 
-- [ ] **Update thumbnail focus texture** · `v21-safe`
-      Multiple files. Upstream changed focused thumbnail border from `buttons/thumbnail_focused.png` (border=8) to `colors/white.png` (border=4, infill=false). Affects `View_51_Poster`, `View_501_Banner`, `VideoOSDBookmarks`, `DialogAddonInfo`, `DialogVideoInfo`, `Includes_DialogSelect`.
-
 - [ ] **Update background pattern assets from `.jpg` to `.png`** · `v21-safe`
       `extras/backgrounds/` — Pattern files changed from `.jpg` to `.png`. `pattern0.jpg` removed. References in XML need updating to match.
 
