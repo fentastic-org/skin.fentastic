@@ -18,9 +18,6 @@ These changes are backward-compatible and can be adopted immediately.
 - [ ] **Update codec display labels** · `v21-safe`
       `Variables.xml` — "Dolby D" → "Dolby Digital", "Dolby D+" → "Dolby Digital+", "TrueHD" → "Dolby TrueHD", "DTSHD-HRA" → "DTS-HD HRA", "DTSHD-MA" → "DTS-HD MA". Also new AAC subtypes (AAC-LC, AAC-SSR, AAC-LTP, HE-AAC, HE-AACv2) and MP2 codec added.
 
-- [ ] **Update language strings 31112 and 31115** · `v21-safe`
-      `Custom_1101_SettingsList.xml:61,69` + language files — FENtastic uses "Toggle audio stream" (#31112) and "Toggle subtitle" (#31115). Upstream changed these to "Audio streams" and "Subtitles streams". Note: this file is renamed to `Custom_1101_SettingsDialog.xml` in v22.
-
 - [ ] **Add EpisodePart to season/episode labels** · `v21-safe`
       `Variables.xml` — `SeasonEpisodeLabel` now includes `$INFO[ListItem.EpisodePart,/]` for multi-part episodes (e.g., "E1/2"). Gracefully empty on v21. New variables: `EpisodeNameLabel`, `SeasonEpisodeAndNameLabel`, `VideoPlayerSeasonEpisodeAndNameLabel`.
 
