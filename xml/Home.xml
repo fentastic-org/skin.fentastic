@@ -145,7 +145,7 @@
 					<control type="grouplist" id="7001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>7010</pagecontrol>
-						<include content="WidgetListCategory" condition="Library.HasContent(music) + !Skin.HasSetting(home_no_categories_widget)">
+						<include content="WidgetListCategory" condition="Library.HasContent(music) + !Skin.HasSetting(home_no_music_categories_widget)">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
@@ -226,7 +226,7 @@
 					<control type="grouplist" id="8001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>8010</pagecontrol>
-						<include content="WidgetListCategory" condition="!Skin.HasSetting(home_no_categories_widget)" >
+						<include content="WidgetListCategory" condition="!Skin.HasSetting(home_no_addons_categories_widget)" >
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
@@ -350,7 +350,7 @@
 					<control type="grouplist" id="12001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>12010</pagecontrol>
-						<include content="WidgetListCategory" condition="System.HasPVRAddon + !Skin.HasSetting(home_no_categories_widget)">
+						<include content="WidgetListCategory" condition="System.HasPVRAddon + !Skin.HasSetting(home_no_pvr_categories_widget)">
 							<param name="content_path" value="pvr://tv/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
@@ -662,7 +662,7 @@
 					</include>
 					<control type="grouplist" id="16001">
 						<pagecontrol>16010</pagecontrol>
-						<include content="WidgetListCategory" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(home_no_categories_widget)">
+						<include content="WidgetListCategory" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(home_no_musicvideos_categories_widget)">
 							<param name="content_path" value="library://video/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
