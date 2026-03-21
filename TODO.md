@@ -21,9 +21,6 @@ These changes are backward-compatible and can be adopted immediately.
 - [ ] **Update thumbnail focus texture** · `v21-safe`
       Multiple files. Upstream changed focused thumbnail border from `buttons/thumbnail_focused.png` (border=8) to `colors/white.png` (border=4, infill=false). Affects `View_51_Poster`, `View_501_Banner`, `VideoOSDBookmarks`, `DialogAddonInfo`, `DialogVideoInfo`, `Includes_DialogSelect`.
 
-- [ ] **Update unicode separator character** · `v21-safe`
-      Multiple files. `∙` (U+2219) changed to `•` (U+2022) in sort method sublabels and weather daily items.
-
 - [ ] **Update background pattern assets from `.jpg` to `.png`** · `v21-safe`
       `extras/backgrounds/` — Pattern files changed from `.jpg` to `.png`. `pattern0.jpg` removed. References in XML need updating to match.
 
@@ -70,9 +67,7 @@ These changes use new v22 APIs, infobools, or controls that don't exist in v21.
       `addon.xml:5` — Required to target Kodi v22.
 
 - [ ] **Migrate weather infolabels to `Weather.Data()` interface**
-      53 occurrences across 5 files.
-      1. **Direct infolabels** (5 occurrences): `Weather.Location` → `Weather.Data(Current.Location)` — `Home.xml:574`; `Weather.Conditions` → `Weather.Data(Current.Condition)` — `Home.xml:585`, `MyWeather.xml:127`; `Weather.Temperature` → `Weather.Data(Current.Temperature)` — `Home.xml:596`, `MyWeather.xml:121`.
-      2. **`Window(weather).Property(...)` → `Weather.Data(...)`** (48 occurrences): `Home.xml` — 7, `Includes_Home.xml` — 31, `MyWeather.xml` — 9, `Variables.xml` — 1.
+      53 occurrences across 5 files. 1. **Direct infolabels** (5 occurrences): `Weather.Location` → `Weather.Data(Current.Location)` — `Home.xml:574`; `Weather.Conditions` → `Weather.Data(Current.Condition)` — `Home.xml:585`, `MyWeather.xml:127`; `Weather.Temperature` → `Weather.Data(Current.Temperature)` — `Home.xml:596`, `MyWeather.xml:121`. 2. **`Window(weather).Property(...)` → `Weather.Data(...)`** (48 occurrences): `Home.xml` — 7, `Includes_Home.xml` — 31, `MyWeather.xml` — 9, `Variables.xml` — 1.
       **Upstream:** Also uses new keys: `Current.FeelsLike`, `Current.Wind`, `Current.Humidity`, `Current.Precipitation`, `Today.Sunrise`, `Today.Sunset`, `WeatherProvider`, `Daily.IsFetched`, `Hourly.IsFetched`.
 
 - [ ] **Remove manual `System.TemperatureUnits` appending**
