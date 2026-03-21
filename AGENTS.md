@@ -10,12 +10,11 @@ No build/compilation step. XML + media only.
 
 ## Upstream Reference – Always Check First
 
-Before API/deprecation/migration changes:
+Before API/deprecation/migration changes, check the local reference copies:
 
-- Fetch **raw** upstream Estuary file:  
-  https://raw.githubusercontent.com/xbmc/xbmc/master/addons/skin.estuary/xml/{filename}.xml
-- Never use tree/list pages.
-- Upstream master = v22 dev — reference for structure/style only.
+- `ref/skin.estuary.v21/` — Estuary from Kodi v21 (Omega 21.3). Use as the baseline for current behavior.
+- `ref/skin.estuary.v22/` — Estuary from Kodi v22 upstream (GitHub master). Use for migration targets and structure/style reference.
+- Compare files directly (e.g. `ref/skin.estuary.v21/xml/Includes.xml` vs `ref/skin.estuary.v22/xml/Includes.xml`) — no web requests needed.
 - Keep v21 patterns unless explicitly switching to v22 target.
 
 ## Compatibility Rules
