@@ -11,6 +11,7 @@ Use Conventional Commits strictly:
 - Scope: optional (e.g. home, view, widget, migration)
 - Body: What changed + why (esp. for deprecations/migrations)
 - Footer: Refs (e.g. TODO.md item, upstream PR)
+- Before committing, always review `git diff HEAD` to understand the changes.
 
 Examples:
 
