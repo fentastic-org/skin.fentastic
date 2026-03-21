@@ -282,6 +282,7 @@
 				<radioposy>16</radioposy>
 				<radiowidth>48</radiowidth>
 				<font>font12</font>
+				<hitrect x="21" y="21" w="245" h="100" />
 				<textureradioonfocus colordiffuse="focused_text">$PARAM[icon]</textureradioonfocus>
 				<textureradioonnofocus colordiffuse="unfocused_text">$PARAM[icon]</textureradioonnofocus>
 				<textureradioofffocus colordiffuse="focused_text">$PARAM[icon]</textureradioofffocus>
@@ -316,6 +317,7 @@
 				<radioposy>16</radioposy>
 				<radiowidth>48</radiowidth>
 				<font>font12</font>
+				<hitrect x="21" y="21" w="245" h="100" />
 				<textureradioonfocus colordiffuse="focused_text">$PARAM[icon_on]</textureradioonfocus>
 				<textureradioonnofocus colordiffuse="unfocused_text">$PARAM[icon_on]</textureradioonnofocus>
 				<textureradioofffocus colordiffuse="focused_text">$PARAM[icon_off]</textureradioofffocus>
