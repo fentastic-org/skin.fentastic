@@ -9,23 +9,6 @@ Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.1
 
 ---
 
-### v21-safe — Can be done now
-
-These changes are backward-compatible and can be adopted immediately.
-
-#### Behavior
-
-- [ ] **Update home widget back-button behavior** · `v21-safe`
-      `Includes_Home.xml` — `<onback>` changed from always resetting to position 0 to conditional: if already at position 0, navigate to side menu (9000); otherwise reset to position 0.
-
-- [ ] **Add per-widget skin settings** · `v21-safe`
-      `SkinSettings.xml`, `Includes_Home.xml` — Generic `home_no_categories_widget` split into per-section settings (`home_no_movies_categories_widget`, `home_no_tvshows_categories_widget`, etc.) with fine-grained toggles for each individual widget.
-
-- [ ] **Add `hitrect` to info dialog buttons** · `v21-safe`
-      `Includes_Buttons.xml` — `<hitrect x="21" y="21" w="245" h="100" />` added to `InfoDialogButton`, `InfoDialogToggleButton`, and `DialogAddonInfo` radio buttons for improved touch targets.
-
----
-
 ### v22-only — Requires Kodi v22
 
 These changes use new v22 APIs, infobools, or controls that don't exist in v21.
