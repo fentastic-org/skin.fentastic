@@ -13,17 +13,6 @@ Upstream Estuary (v4.1.0) has fully migrated to v22 — targeting `xbmc.gui` 5.1
 
 These changes are backward-compatible and can be adopted immediately.
 
-#### Visual / Cosmetic
-
-- [ ] **Add `dialog_header_tint` color to all color schemes** · `v21-safe`
-      Upstream added a new `dialog_header_tint` color to `defaults.xml` and all 13 theme color files. Used by the redesigned `DialogBackgroundCommons` header. FENtastic color schemes need this color added.
-
-- [ ] **Update background pattern assets from `.jpg` to `.png`** · `v21-safe`
-      `extras/backgrounds/` — Pattern files changed from `.jpg` to `.png`. `pattern0.jpg` removed. References in XML need updating to match.
-
-- [ ] **Update watched/resume overlay icons** · `v21-safe`
-      Upstream split the single `resume.png` into `OverlayWatchedResume.png` (resumed + watched) and `OverlayResume.png` (resumed + unwatched). Safe if the new assets are bundled.
-
 #### Labels / Strings
 
 - [ ] **Update codec display labels** · `v21-safe`
@@ -34,9 +23,6 @@ These changes are backward-compatible and can be adopted immediately.
 
 - [ ] **Add EpisodePart to season/episode labels** · `v21-safe`
       `Variables.xml` — `SeasonEpisodeLabel` now includes `$INFO[ListItem.EpisodePart,/]` for multi-part episodes (e.g., "E1/2"). Gracefully empty on v21. New variables: `EpisodeNameLabel`, `SeasonEpisodeAndNameLabel`, `VideoPlayerSeasonEpisodeAndNameLabel`.
-
-- [ ] **Add season show plot fallback** · `v21-safe`
-      `Variables.xml` — When viewing a season with no individual plot, fall back to `$INFO[Container.ShowPlot]` via `String.IsEqual(ListItem.DBType,season)` condition. Applies to `PlotTextBoxVar` / `ShiftLeftTextBoxVar`.
 
 #### Behavior
 
