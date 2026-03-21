@@ -521,7 +521,7 @@ msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31112"
-msgid "Toggle audio stream"
+msgid "Audio streams"
 msgstr ""
 
 #: /xml/Custom_1107_SearchDialog.xml
@@ -536,7 +536,7 @@ msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31115"
-msgid "Toggle subtitle"
+msgid "Subtitles streams"
 msgstr ""
 
 #: /xml/Includes_Home.xml
