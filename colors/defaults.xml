@@ -3,6 +3,7 @@
 	<color name="primary_background">FF666666</color>
 	<color name="secondary_background">4D808080</color>
 	<color name="dialog_tint">E6222222</color>
+	<color name="dialog_header_tint">FF2D2E2F</color>
 	<color name="dialog_bg">FF1F2020</color>
 	<color name="dialog_bg2">FF363636</color>
 	<color name="button_focus">FFEAECED</color>
