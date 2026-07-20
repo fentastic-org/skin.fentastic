@@ -22,9 +22,10 @@
 				<top>0</top>
 				<width>640</width>
 				<height>160</height>
-				<texture colordiffuse="$VAR[DialogBgColorVar]">masks/dialog-notification.png</texture>
+				<texture colordiffuse="dialog_bg">masks/dialog-notification.png</texture>
 				<bordersize>17</bordersize>
 			</control>
+			<!-- TODO Find way to apply diffuse texture -->
 			<control type="image" id="400">
 				<description>avatar</description>
 				<left>25</left>
@@ -32,7 +33,6 @@
 				<width>110</width>
 				<height>110</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="masks/focus.png" />
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
