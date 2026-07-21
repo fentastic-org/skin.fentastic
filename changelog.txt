@@ -1,3 +1,6 @@
+[B]1.5.7[/B]
+• Fixed the Favourites button in the media menu not opening on Kodi 21
+
 [B]1.5.6[/B]
 • Replaced licence files with the verbatim GPL-2.0 and CC BY-SA 4.0 texts
 • Updated install instructions to point at the fentastic-org repository
