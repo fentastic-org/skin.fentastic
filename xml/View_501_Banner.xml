@@ -162,7 +162,7 @@
 								<font>font12</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<label>$VAR[BannerLabel2Var]</label>
+								<label>$VAR[WatchedStatusVar]</label>
 							</control>
 						</control>
 					</control>

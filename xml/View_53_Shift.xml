@@ -114,7 +114,7 @@
 							<height>32</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<texture>$VAR[WallWatchedIconVar]</texture>
+							<texture>$VAR[ItemStatusIconVar]</texture>
 						</control>
 						<control type="group">
 							<left>292</left>
@@ -217,7 +217,7 @@
 							<height>32</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<texture>$VAR[WallWatchedIconVar]</texture>
+							<texture>$VAR[ItemStatusIconVar]</texture>
 						</control>
 						<control type="group">
 							<left>292</left>
