@@ -1,5 +1,9 @@
 [B][COLOR accent_color]Version 1.5.7[/COLOR][/B]
 • Fixed the Favourites button in the media menu not opening on Kodi 21
+• Collections, video versions and extras now show their own badge instead of
+  replacing the watched status
+• Added watched/total counts for seasons and movie sets
+• Updated the Rotten Tomatoes rating icons to their current branding
 • Changelog viewer now reads changelog.txt instead of a hardcoded copy
 
 [B][COLOR accent_color]Version 1.5.6[/COLOR][/B]
