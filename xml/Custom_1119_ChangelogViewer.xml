@@ -4,7 +4,9 @@
 	<onunload>ClearProperty(TextViewerHeader,Home)</onunload>
 	<onunload>ClearProperty(TextViewerSubHeader,Home)</onunload>
 	<onunload>ClearProperty(TextViewerContent,Home)</onunload>
+	<onunload>ClearProperty(ChangelogContent,Home)</onunload>
 	<onunload>ClearProperty(Changelog,skinsettings)</onunload>
+	<onload condition="!String.IsEmpty(Window(skinsettings).Property(Changelog))">RunScript(script.fentastic.helper, mode=load_changelog)</onload>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="button" id="64">
@@ -70,7 +72,7 @@
 				<pagecontrol>62</pagecontrol>
 				<font>font37</font>
 				<textcolor>unfocused_text</textcolor>
-				<include>Changelog</include>
+				<label>$INFO[Window(Home).Property(ChangelogContent)]</label>
 				<visible>!String.IsEmpty(Window(skinsettings).Property(Changelog))</visible>
 				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
