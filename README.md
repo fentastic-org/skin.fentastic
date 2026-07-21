@@ -122,3 +122,20 @@ To set up the widgets, follow these steps:
 - Make sure to check all open Issues to see if your problem is being addressed already.
 - **DO NOT** hijack an open Issue with unrelated problems. Open a new Issue.
 - Do your best to **monitor** the Issue you have opened. If I need additional information and it is not supplied within 7 days, I will close the Issue. -->
+
+## Licensing
+
+This skin is a community fork of [FENtastic](https://github.com/ivarbrandt/skin.fentastic)
+by Ivar Brandt, which is itself based on Kodi's default
+[Estuary](https://github.com/xbmc/xbmc/tree/master/addons/skin.estuary) skin by
+phil65 (Team Kodi). Both upstreams carry the same two grants, which this fork
+inherits and cannot change unilaterally:
+
+* **Code** — GNU General Public License, Version 2.0. See [LICENSE](LICENSE).
+* **Artwork** — Creative Commons Attribution-ShareAlike 4.0 International.
+  See [LICENSE-ARTWORK](LICENSE-ARTWORK).
+
+Bundled third-party assets keep their own licences: fonts under SIL OFL 1.1 and
+Apache 2.0 (`fonts/`), subtitle flag icons under MIT
+(`media/windows/subtitles/flags/`), and home images under CC0
+(`extras/home-images/`).
