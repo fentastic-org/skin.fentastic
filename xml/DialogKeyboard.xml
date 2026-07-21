@@ -19,15 +19,15 @@
 			</control>
 			<control type="image">
 				<left>-35</left>
+				<right>-37</right>
 				<bottom>0</bottom>
-				<width>1992</width>
 				<height>472</height>
 				<texture diffuse="masks/keyboard.png" colordiffuse="button_focus">colors/white.png</texture>
 			</control>
 			<control type="image">
 				<left>-35</left>
+				<right>-35</right>
 				<bottom>0</bottom>
-				<width>1990</width>
 				<height>470</height>
 				<texture diffuse="masks/keyboard.png" colordiffuse="dialog_bg">colors/white.png</texture>
 			</control>
