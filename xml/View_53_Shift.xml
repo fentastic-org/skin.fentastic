@@ -116,6 +116,15 @@
 							<aligny>center</aligny>
 							<texture>$VAR[ItemStatusIconVar]</texture>
 						</control>
+						<control type="image">
+							<left>81</left>
+							<top>510</top>
+							<width>32</width>
+							<height>32</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<texture>$VAR[ItemTypeIconVar]</texture>
+						</control>
 						<control type="group">
 							<left>292</left>
 							<top>92</top>
@@ -218,6 +227,15 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<texture>$VAR[ItemStatusIconVar]</texture>
+						</control>
+						<control type="image">
+							<left>81</left>
+							<top>510</top>
+							<width>32</width>
+							<height>32</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<texture>$VAR[ItemTypeIconVar]</texture>
 						</control>
 						<control type="group">
 							<left>292</left>
