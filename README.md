@@ -59,15 +59,15 @@ Here are some of the key differences between FENtastic and the default Estuary s
 
 To download this skin, go to Settings » File Manager » at the bottom click "Add Source" » then add the source below:
 
-Kodi File Manager Source: [https://ivarbrandt.github.io/repository.ivarbrandt/](https://ivarbrandt.github.io/repository.ivarbrandt/)
+Kodi File Manager Source: [https://fentastic-org.github.io/](https://fentastic-org.github.io/) (name it "FENtastic")
 
 ![Add Source](resources/images/add_source.jpg)
 
-After adding the source go back to the Settings page » click Addons » Install from zip file » click the source you just added and click "repository.ivarbrandt-1.0.1.zip". This will install my Kodi repo.
+After adding the source go back to the Settings page » click Addons » Install from zip file » click the source you just added and click the `repository.fentastic-*.zip` file listed there. This installs the FENtastic Community Repository.
 
 ![Install from zip](resources/images/install_from_zip.jpg)
 
-Now click Install from repository » Find and click ivarbrandt's Repository » Look and feel » Skin » FENtastic » click to install it.
+Now click Install from repository » Find and click FENtastic Community Repository » Look and feel » Skin » Fentastic » click to install it.
 
 ![Addon Info](resources/images/addon_info.jpg)
 
