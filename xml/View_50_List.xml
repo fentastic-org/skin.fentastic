@@ -112,7 +112,7 @@
 						<top>600</top>
 						<width>540</width>
 						<bottom>70</bottom>
-						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>[COLOR button_focus][B]$LOCALIZE[31000]: [/COLOR]$INFO[musicplayer.Playlistposition,]$INFO[musicplayer.Playlistlength,/][/B][CR]$VAR[NowPlayingInfoVar]</label>
 					</control>
 					<control type="textbox" id="15599">
@@ -121,7 +121,7 @@
 						<top>640</top>
 						<width>540</width>
 						<bottom>70</bottom>
-						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>[COLOR button_focus][B]$LOCALIZE[31000]: [/COLOR]$LOCALIZE[36623][/B]</label>
 					</control>
 				</control>
@@ -631,7 +631,7 @@
 							<bottom>80</bottom>
 							<label>$VAR[InfoPanel]</label>
 							<textcolor>unfocused_text</textcolor>
-							<autoscroll time="3000" delay="10000" repeat="10000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+							<autoscroll time="3000" delay="10000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 							<visible>Skin.HasSetting(UseLandscape)</visible>
 						</control>
 						<control type="textbox">
@@ -648,7 +648,7 @@
 						<top>600</top>
 						<width>540</width>
 						<bottom>70</bottom>
-						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[ListBoxInfoVar]</label>
 						<textcolor>unfocused_text</textcolor>
 						<visible>!String.IsEqual(ListItem.DbType,movie) + !String.IsEqual(ListItem.DbType,tvshow) + !String.IsEqual(ListItem.DbType,season) + !String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(ListItem.DBType,song)</visible>
@@ -660,7 +660,7 @@
 							<top>503</top>
 							<width>540</width>
 							<bottom>80</bottom>
-							<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+							<autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 							<label>$VAR[InfoPanelEpisode]</label>
 							<textcolor>unfocused_text</textcolor>
 						</control>
@@ -679,7 +679,7 @@
 						<top>600</top>
 						<width>540</width>
 						<bottom>70</bottom>
-						<autoscroll time="3000" delay="3000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="3000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[ListBoxInfoVar]</label>
 						<textcolor>unfocused_text</textcolor>
 						<visible>String.IsEqual(ListItem.DBType,song)</visible>
