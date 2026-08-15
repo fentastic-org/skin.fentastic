@@ -1,122 +1,96 @@
-# FENtastic Skin for Kodi
+# FENtastic
 
-FENtastic is a modded version of the default Estuary skin, specifically designed for FEN users. It includes several new features and adjustments to pre-existing views, a new UI, viewtypes, customizable widgets, and a new default colors theme.
+FENtastic is a Kodi skin based on Estuary and designed for FEN. It adds
+customizable menus and widgets, new view types, ratings, stacked widgets, and
+multi-category search.
 
-Below you'll find some information about the [differences](#fentastic-vs-default-estuary-skin) between Estuary and FENtastic along with some screenshots and a detailed [setup guide](#setup-guide) of the skin.
+- [Quick start](#quick-start)
+- [Configure the home screen](#configure-the-home-screen)
+- [Widget options](#widget-options)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Support](#support)
 
+## Quick start
 
-## FENtastic vs Default Estuary Skin
+1. In Kodi, open **Settings → File Manager → Add source**.
+2. Add `https://fentastic-org.github.io/` and name it **FENtastic**.
+3. Return to **Settings → Add-ons → Install from zip file**.
+4. Open the FENtastic source and install `repository.fentastic-*.zip`.
+5. Select **Install from repository → FENtastic Community Repository → Look
+   and feel → Skin → FENtastic**, then install the skin.
 
-Here are some of the key differences between FENtastic and the default Estuary skin.
+![Add the FENtastic repository source](resources/images/add_source.jpg)
 
-* **New UI Experience**: FENtastic introduces an updated modern UI.
+After installation, open **Settings → Interface → Configure skin → Extra info
+→ Setup Guide** for the guide included with the skin.
 
-  ![Viewtypes Widelist](resources/images/viewtypes1.jpg)
+![Open the built-in setup guide](resources/images/setup_guide.jpg)
 
-  ![Viewtypes List](resources/images/viewtypes2.jpg)
+## Configure the home screen
 
-  ![Viewtypes Widelist](resources/images/viewtypes3.jpg)
+The home screen is empty on first install. Movie and TV show sections appear
+after you enable them and assign their main-menu paths.
 
-  ![Viewtypes List](resources/images/viewtypes4.jpg)
+1. Open **Settings → Interface → Configure skin → Main menu items**.
+2. Select a menu item to enable its section.
+3. Select **Set main menu path** and choose a path in FEN, such as a Trakt
+   movie or TV show collection.
+4. Select **Set widgets** and configure up to 10 widgets for the section.
 
-* **New viewtypes**: FENtastic introduces "WideInfoWall" and "WideWall" viewtypes.
+![Configure main-menu items](resources/images/step_1.jpg)
 
-  ![Viewtypes WideInfoWall](resources/images/viewtypes.jpg)
+> Enabling a section is not enough to display it on the home screen. You must
+> also assign its main-menu path.
 
-* **Customizable Widgets**: FENtastic allows you to customize widgets and category widgets for movies, tvshows, and episodes.
+## Widget options
 
-  ![Customizable Widgets](resources/images/customizable_widgets.jpg)
+Each widget can use one of four display types:
 
-* **Custom Stacked Widgets**: FENtastic introduces stacked widgets for movies and tvshows.
+- Poster
+- Landscape
+- LandscapeInfo
+- Category
 
-  ![Stacked Widgets](resources/images/stacked_widgets.jpg)
+Category widgets can also be configured as stacked widgets with their own
+display type.
 
-* **Custom Search Window**: FENtastic introduces a search window to simultaneously search multiple categories including TRAKT Lists.
+Select an existing widget to reorder, rename, remake, change, or remove it. You
+can also rename, remake, or remove main-menu items.
 
-  ![Search Window](resources/images/search_window.jpg)
-
-  ![Search Window](resources/images/search_window1.jpg)
-
-* **InfoPanel with Ratings**: FENtastic introduces a new InfoPanel with optional displaying of ratings for widgets. The ratings can be dislayed in the InfoPanel, widget labels, or both.
-
-  ![InfoPanel](resources/images/infopanel.jpg)
+![Configure a widget](resources/images/step_4.jpg)
 
 ## Features
-* NEW UI experience
-* 2 NEW viewtypes ("WideWall" and "WideInfoWall")
-* Plenty of adjustments to pre-existing views
-* Customizable movie and show main menu items
-* Customizable widgets and category widgets for movies, tvshows, and episodes
-* Custom stacked widgets for movies, tvshows, and episodes
-* Ratings displayed for movies, tvshows, seasons, and episodes
-* New InfoPanel for widgets
-* New custom search window
-* Progress displayed for movies, tvshows, seasons and episodes
-* Custom Search options from Home window
 
+- Custom movie and TV show main-menu items
+- Up to 10 widgets per movie or TV show section
+- Custom category and stacked widgets
+- WideWall and WideInfoWall view types
+- Refined versions of existing Estuary views
+- Ratings for movies, TV shows, seasons, and episodes
+- Playback progress for movies, TV shows, seasons, and episodes
+- Optional InfoPanel for widgets
+- Search across multiple categories, including Trakt lists
 
-## Download and installation
+## Screenshots
 
-To download this skin, go to Settings » File Manager » at the bottom click "Add Source" » then add the source below:
+| Views | Widgets |
+| --- | --- |
+| ![Wide-list view](resources/images/viewtypes1.jpg) | ![Customizable widgets](resources/images/customizable_widgets.jpg) |
+| ![Wide-wall view](resources/images/viewtypes.jpg) | ![Stacked widgets](resources/images/stacked_widgets.jpg) |
 
-Kodi File Manager Source: [https://fentastic-org.github.io/](https://fentastic-org.github.io/) (name it "FENtastic")
+| Search | Ratings |
+| --- | --- |
+| ![Multi-category search](resources/images/search_window.jpg) | ![InfoPanel with ratings](resources/images/infopanel.jpg) |
 
-![Add Source](resources/images/add_source.jpg)
+## Support
 
-After adding the source go back to the Settings page » click Addons » Install from zip file » click the source you just added and click the `repository.fentastic-*.zip` file listed there. This installs the FENtastic Community Repository.
+Before reporting a skin issue:
 
-![Install from zip](resources/images/install_from_zip.jpg)
+- Read the changelog for recent feature changes.
+- Search open issues for an existing report.
+- Include a Kodi log with error reports.
+- Open a separate issue for an unrelated problem.
 
-Now click Install from repository » Find and click FENtastic Community Repository » Look and feel » Skin » Fentastic » click to install it.
-
-![Addon Info](resources/images/addon_info.jpg)
-
-On FIRST install go to Settings » Interface » in the Skin section click Configure skin... » Extra info » Setup Guide. Here you will find some tips on setting up your main menu paths and widgets.
-
-   ![Setup Guide](resources/images/setup_guide.jpg)
-
-I have also included a step by step Setup Guide below.
-
-## Setup Guide
-
-On first install, the home screen should be empty. This means that the Movie and Show sections should be missing from the main menu on the left.
-
-![Empty Home Screen](resources/images/empty_home_screen.jpg)
-
-To set up the widgets, follow these steps:
-
-1. From the home screen go to Settings » Interface » in the Skin section click Configure skin... . Here you'll see a group of menu items on the left. Navigate to Main menu items.
-
-   ![Step 1](resources/images/step_1.jpg)
-
-2. Click a menu item to toggle the display of a section on and off. This will show or hide the section on the home screen.
-
-   **NOTE:** Even if you have the Movie/Show section toggled on, you won't see them on the home screen until you set a main menu path for them.
-
-   Toggle the Movie/Show section to 'on'. You'll see a couple of menu items drop down.
-
-   ![Step 2](resources/images/step_2.jpg)
-
-3. To set up the main menu path, click on "Set main menu path." You can set this to whatever path you like within FEN. For example, you might set it to your Trakt movie/tvshow collection.
-
-   ![Step 3](resources/images/step_3.jpg)
-
-4. To set up the movie/tvshow widgets, click on "Set widgets." You can configure up to 10 movie and 10 TV show widgets. After choosing a path, you'll have the option to set the label and display type (Poster, Landscape, LandscapeInfo, and Category) for each widget. If you choose the Category display type, you'll have the option to set it up as a stacked widget. After that, you can choose the display type for the stacked widget as well.
-
-   ![Step 4](resources/images/step_4.jpg)
-
-5. If you would like to rearrange, rename, remake, change display type, or remove a widget after you have set it up, click the widget. You'll see a list of options pop up. Click the desired option. You can reconfigure your widgets as many times as you'd like. You can also rename, remake, or remove the main menu items.
-
-   ![Step 5](resources/images/step_5.jpg)
-
-<!-- ## Rules for Reporting Issues -->
-
-<!-- If you encounter any issues while using FENtastic, please follow these guidelines before opening an Issue:
-
-- Read the **CHANGELOG**. As new updates get released features are added, changed, modified or removed. *Before opening an Issue* related to this make sure you read the changelog (located at the bottom of Skin settings in Extra info) as it will contain information for all the changes made to each update. It is also a good way to stay current with what is new with the skin.
-- **Pre-made builds** of any kind are *not supported*. If you installed someone else's build, you need to go to them to troubleshoot issues. These builds often contain a plethora of addons so any number of things could go wrong. Keep in mind this skin was designed exclusively for use with **FEN**.
-- Trakt related Issues are *not supported*. These are not skin related. You'll need to contact the developer of the addon that you are experiencing these types of problems/errors with.
-- Error related Issues **MUST** include a log file. Your Issue will be closed immediately if you fail to include a log file.
-- Make sure to check all open Issues to see if your problem is being addressed already.
-- **DO NOT** hijack an open Issue with unrelated problems. Open a new Issue.
-- Do your best to **monitor** the Issue you have opened. If I need additional information and it is not supplied within 7 days, I will close the Issue. -->
+Pre-made builds and Trakt-specific problems are outside the scope of FENtastic
+support.
